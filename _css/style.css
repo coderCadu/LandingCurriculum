@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --white-smoke: #f5f5f5;
+  --pure-black: #000;
+  --gold-yellow: #EDE700;
+  --material-purple: #6200EE;
+  --material-purple-opacity: #6200EEEC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--material-purple);
+  font-family: 'Roboto', sans-serif;
+  color: var(--white-smoke);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: var(--material-purple-opacity);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav > div > p {
+  font-size: 2em;
+  margin-left: 20px;
+}
+
+nav > div > p > a {
+  text-decoration: none;
+  color: var(--white-smoke);
+}
+
+nav > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+nav > ul > li {
+  padding: 16px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--white-smoke);
+  font-size: 1.3em;
+}
+
+nav > ul > li > a:hover {
+  color: var(--gold-yellow);
+}
+
+header > img {
+  width: 100%;
+  height: 695px;
+}
+
+header > div {
+  position: absolute;
+  top: 26vh;
+  left: 36vw;
+  font-size: 2.1em;
+}
+
+article#sobre {
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article#sobre p {
+  text-indent: 1em;
+  text-align: justify;
+}
+
+article#sobre p > span{
+  font-style: italic;
+}
+
+article#sobre div:nth-of-type(1) {
+  width: 520px;
+}
+
+article#sobre div:nth-of-type(2) {
+  height: 400px;
+}
+
+article#sobre div:nth-of-type(2) > img {
+  height: 100%;
+}
+
+article#formacao {
+  padding: 100px 0;
+  width: 100%;
+  background-color: var(--white-smoke);
+  color: var(--pure-black);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+article#formacao img {
+  width: 300px;
+  height: 240px;
+}
+
+article#skills {
+  height: 580px;
+  width: 100%;
+}
+
+article#contato {
+  height: 580px;
+  width: 100%;
+  background-color: var(--white-smoke);
+  color: var(--pure-black);
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer > div {
+  display: flex;
+}
+
+footer > div > a {
+  color: var(--white-smoke);
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+footer > div > a:hover {
+  color: var(--gold-yellow);
+}
+
+@media (max-width: 750px) {
+  nav {
+    display: none;
+  }
+}
