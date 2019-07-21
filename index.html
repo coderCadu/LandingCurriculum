@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Curriculo do desenvolvedor front end junior Carlos Eduardo">
+    <link rel="canonical" href="https://carlosedu13.github.io/LandingCurriculum/">
+    <meta name="author" content="Cadugraphys.py">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Google+ / Schema.org-->
+    <meta itemprop="name" content="Carlos Eduardo | Curriculum">
+    <meta itemprop="description" content="Curriculo do desenvolvedor front end junior Carlos Eduardo">
+
+     <!-- Open Graph Facebook -->
+     <meta property="og:title" content="Carlos Eduardo | Curriculum">
+     <meta property="og:description" content="Curriculo do desenvolvedor front end junior Carlos Eduardo">
+     <meta property="og:url" content="https://carlosedu13.github.io/LandingCurriculum/">
+     <meta property="og:site_name" content="Carlos Eduardo">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="assets/img/frontend.jpg">
+
+     <!-- Twitter -->
+    <meta name="twitter:title" content="Carlos Eduardo | Curriculum">
+    <meta name="twitter:description" content="Curriculo do desenvolvedor front end junior Carlos Eduardo">
+    <meta name="twitter:url" content="https://carlosedu13.github.io/LandingCurriculum/">
+    <meta name="twitter:card" content="Carlos Eduardo | Curriculum">
+    <meta name="twitter:image" content="assets/img/frontend.jpg">
+    <meta name="twitter:creator" content="@cadugraphys">
+
     <title>Carlos Eduardo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav id="topo">
+    <nav id="topo" role="menubar">
       <div>
-        <p><a href="#topo">Cadugraphys.py</a></p>
+        <p><a href="#topo" role="menuitem">Cadugraphys.py</a></p>
       </div>
       <ul>
-        <li><a href="#sobre">Sobre mim</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre" role="menuitem">Sobre mim</a></li>
+        <li><a href="#formacao" role="menuitem">Formação</a></li>
+        <li><a href="#skills" role="menuitem">Skills</a></li>
+        <li><a href="#contato" role="menuitem">Contato</a></li>
       </ul>
     </nav>
     <header>
@@ -27,7 +52,7 @@
       </div>
     </header>
     <article id="sobre">
-      <div>
+      <div tabindex="0">
         <h1>Carlos Eduardo da Silva</h1>
         <p>
           Eu sou um estudante de ciência da computação que visa tornar-se um <span>JavaScript Fullstack Developer</span> com maior ênfase nas habilidades voltadas ao <span>Front End</span> por este motivo estou entrando no mercado profissional como
@@ -42,22 +67,22 @@
           importancia para o <span>front end</span>.
         </p>
       </div>
-      <div>
+      <div tabindex="0">
         <img src="assets/img/code.jpg" alt="programação PHP" title="PHP code">
       </div>
     </article>
     <article id="formacao">
-      <div>
+      <div tabindex="0">
         <img src="assets/img/school.svg" alt="escola">
         <h2>Colégio Waldorf Micael de São Paulo</h2>
         <h3>Ensino Médio</h3>
       </div>
-      <div>
+      <div tabindex="0">
         <img src="assets/img/adobe.svg" alt="adobe logo">
         <h2>School of art, game and animation - SAGA</h2>
         <h3>Curso Start - Design Gráfico</h3>
       </div>
-      <div>
+      <div tabindex="0">
         <img src="assets/img/graduation-cap.svg" alt=" chapeu de formatura">
         <h2>Universidade Paulista - UNIP</h2>
         <h3>Ciência da Computação - 2 Semestre</h3>
@@ -68,28 +93,28 @@
     </article>
     <article id="contato">
       <h2>Formulário pra contato</h2>
-      <form action="https://submit-form.com/agYqUrcY_08g8cTowKwVH">
+      <form action="https://submit-form.com/agYqUrcY_08g8cTowKwVH" role="form">
         <div>
           <input type="hidden" name="_redirect" value="false">
         </div>
         <div>
           <label for="nome">Nome:</label>
-          <input type="text" name="nome" placeholder="Camila Andrade" required>
+          <input type="text" name="nome" placeholder="Camila Andrade" role="textbox" required aria-required="true" aria-labelledby="nome">
         </div>
         <div>
           <label for="email">Email:</label>
-          <input type="email" name="email" placeholder="camilandrade_silva@email.com" required>
+          <input type="email" name="email" placeholder="camilandrade_silva@email.com" role="textbox" required aria-required="true" aria-labelledby="email">
         </div>
         <div>
           <label for="assunto">Assunto:</label>
-          <input type="text" name="assunto" placeholder="Preciso da sua ajuda" required>
+          <input type="text" name="assunto" placeholder="Preciso da sua ajuda" role="textbox" required aria-required="true" aria-labelledby="assunto">
         </div>
         <div>
           <label for="mensagem">Mensagem:</label>
-          <textarea name="mensagem" cols="30" rows="10" placeholder="Olá dev, então..." required></textarea>
+          <textarea name="mensagem" cols="30" rows="10" placeholder="Olá dev, então..." role="textbox" required aria-required="true" aria-labelledby="mensagem"></textarea>
         </div>
         <div>
-          <button class="btn btn-success" type="submit" formmethod="POST">Enviar</button>
+          <button class="btn btn-success" type="submit" formmethod="POST" role="button" aria-label="enviar">Enviar</button>
           <p mensagemSucesso></p>
         </div>
       </form>
