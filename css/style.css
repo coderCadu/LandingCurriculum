@@ -6,6 +6,16 @@
   --gold-yellow: #EDE700;
   --material-purple: #6200EE;
   --material-purple-opacity: #6200EEEC;
+  --success: #28a745;
+  --green: #23993f;
+  --form-bg: #ededed;
+  --border-primary-color: #bcbcbc;
+  --font-color-gray: #464646;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
 
 * {
@@ -134,6 +144,66 @@ article#contato {
   width: 100%;
   background-color: var(--white-smoke);
   color: var(--pure-black);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+article#contato > h2 {
+  font-size: 2.3em;
+}
+
+article#contato > form {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 50vw;
+  border: 1px solid var(--pure-black);
+  padding: 14px;
+  border-radius: 8px;
+}
+
+article#contato > form > div {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 4px;
+}
+
+article#contato > form > div > label {
+  padding: 4px;
+  border: 1px solid var(--border-primary-color);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: var(--form-bg);
+  color: var(--font-color-gray);
+  padding: 6px;
+}
+
+article#contato > form > div > input,
+article#contato > form > div > textarea {
+  width: 100%;
+  border: 1px solid var(--border-primary-color);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-left: 4px;
+}
+
+.btn {
+  padding: 8px;
+  border: 1px solid var(--pure-black);
+  border-radius: 10px;
+  width: 80px;
+  margin: 8px;
+}
+
+.btn-success {
+  color: var(--white-smoke);
+  background-color: var(--success);
+}
+
+.btn:hover {
+  background-color: var(--green);
 }
 
 footer {

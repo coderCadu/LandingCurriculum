@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,7 +67,26 @@
       
     </article>
     <article id="contato">
-
+      <h2>Formulário pra contato</h2>
+      <form action="#">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" placeholder="Camila Andrade">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="camilandrade_silva@email.com">
+        </div>
+        <div>
+          <label for="assunto">Assunto:</label>
+          <input type="text" name="assunto" placeholder="Preciso da sua ajuda">
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" cols="30" rows="10" placeholder="Olá dev, então..."></textarea>
+        </div>
+        <button class="btn btn-success" type="button" formmethod="POST">Enviar</button>
+      </form>
     </article>
     <footer>
       <p>Me encontre nas redes sociais</p>
