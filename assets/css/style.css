@@ -270,6 +270,8 @@ article#contato > form > div > textarea {
   border-radius: 8px;
   width: 80px;
   margin: 8px;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 .btn-success {
