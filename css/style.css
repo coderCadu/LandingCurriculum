@@ -170,6 +170,18 @@ article#contato > form > div {
   margin: 4px;
 }
 
+article#contato > form > div:nth-child(6) {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 4px;
+}
+
+article#contato > form > div:nth-child(6) > p{
+  color: var(--success);
+  font-size: 1.1rem;
+}
+
 article#contato > form > div > label {
   padding: 4px;
   border: 1px solid var(--border-primary-color);
