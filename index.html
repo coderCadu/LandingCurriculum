@@ -68,24 +68,29 @@
     </article>
     <article id="contato">
       <h2>Formulário pra contato</h2>
-      <form action="#">
+      <form action="https://submit-form.com/agYqUrcY_08g8cTowKwVH">
+        <div>
+          <input type="hidden" name="_redirect" value="false">
+        </div>
         <div>
           <label for="nome">Nome:</label>
-          <input type="text" name="nome" placeholder="Camila Andrade">
+          <input type="text" name="nome" placeholder="Camila Andrade" required>
         </div>
         <div>
           <label for="email">Email:</label>
-          <input type="email" name="email" placeholder="camilandrade_silva@email.com">
+          <input type="email" name="email" placeholder="camilandrade_silva@email.com" required>
         </div>
         <div>
           <label for="assunto">Assunto:</label>
-          <input type="text" name="assunto" placeholder="Preciso da sua ajuda">
+          <input type="text" name="assunto" placeholder="Preciso da sua ajuda" required>
         </div>
         <div>
           <label for="mensagem">Mensagem:</label>
-          <textarea name="mensagem" cols="30" rows="10" placeholder="Olá dev, então..."></textarea>
+          <textarea name="mensagem" cols="30" rows="10" placeholder="Olá dev, então..." required></textarea>
         </div>
-        <button class="btn btn-success" type="button" formmethod="POST">Enviar</button>
+        <div>
+          <button class="btn btn-success" type="submit" formmethod="POST">Enviar</button>
+        </div>
       </form>
     </article>
     <footer>

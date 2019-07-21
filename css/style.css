@@ -190,9 +190,9 @@ article#contato > form > div > textarea {
 }
 
 .btn {
-  padding: 8px;
+  padding: 10px;
   border: 1px solid var(--pure-black);
-  border-radius: 10px;
+  border-radius: 8px;
   width: 80px;
   margin: 8px;
 }
@@ -202,7 +202,7 @@ article#contato > form > div > textarea {
   background-color: var(--success);
 }
 
-.btn:hover {
+.btn-success:hover {
   background-color: var(--green);
 }
 
