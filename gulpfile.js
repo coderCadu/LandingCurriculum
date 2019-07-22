@@ -12,6 +12,8 @@ const htmlmin = require('gulp-htmlmin');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const uglifycss = require('gulp-uglifycss');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
 
 function js() {
   return src('src/assets/js/**/*.js')
@@ -28,7 +30,11 @@ function html() {
 }
 
 function css() {
+  const plugins = [
+    autoprefixer({}),
+  ];
   return src('src/assets/css/**/*.css')
+    .pipe(postcss(plugins))
     .pipe(uglifycss())
     .pipe(concat('styles.min.css'))
     .pipe(dest('docs/assets/css'));
