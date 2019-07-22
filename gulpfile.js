@@ -35,8 +35,8 @@ function css() {
   ];
   return src('src/assets/css/**/*.css')
     .pipe(postcss(plugins))
-    .pipe(uglifycss())
     .pipe(concat('styles.min.css'))
+    .pipe(uglifycss())
     .pipe(dest('docs/assets/css'));
 }
 
