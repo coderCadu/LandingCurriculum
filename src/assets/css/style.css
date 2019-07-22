@@ -30,6 +30,7 @@ body {
   color: var(--white-smoke);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 nav {
@@ -110,7 +111,7 @@ article#sobre div:nth-of-type(1) {
 }
 
 article#sobre div:nth-of-type(2) {
-  height: 400px;
+  height: 50vh;
 }
 
 article#sobre div:nth-of-type(2) > img {
@@ -135,7 +136,7 @@ article#formacao img {
 }
 
 article#skills {
-  height: 580px;
+  padding: 100px 0;
   width: 100%;
   font-size: 1.5rem;
   display: flex;
@@ -220,7 +221,6 @@ article#contato > h2 {
 article#contato > form {
   display: flex;
   flex-direction: column;
-  height: 50vh;
   width: 50vw;
   border: 1px solid var(--pure-black);
   padding: 14px;
@@ -305,24 +305,32 @@ footer > div > a:hover {
   color: var(--gold-yellow);
 }
 
-@media (max-width: var(--breakpoint-xl)) {
+@media (min-width: var(--breakpoint-xl)) {
 
 }
 
-@media (max-width: var(--breakpoint-lg)) {
+@media (min-width: var(--breakpoint-lg)) and (max-width: var(--breakpoint-xl)) {
 
 }
 
-@media (max-width: var(--breakpoint-md)) {
-  nav {
+@media (min-width: var(--breakpoint-sm)) and (max-width: var(--breakpoint-lg)) {
+  nav > ul {
+    display: none;
+  }
+
+  article#sobre > div > img {
     display: none;
   }
 }
 
-@media (max-width: var(--breakpoint-sm)) {
-
+@media (max-width: var(--breakpoint-xs)) and (max-width: var(--breakpoint-sm)) {
+  nav > ul {
+    display: none;
+  }
 }
 
 @media (max-width: var(--breakpoint-xs)) {
-
+  nav > ul {
+    display: none;
+  }
 }
