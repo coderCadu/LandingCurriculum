@@ -1,0 +1,42 @@
+nav {
+  background-color: var(--material-purple-opacity);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav > div > p {
+  font-size: 2em;
+  margin-left: 20px;
+}
+
+nav > div > p > a {
+  text-decoration: none;
+  color: var(--white-smoke);
+}
+
+nav > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+nav > ul > li {
+  padding: 16px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--white-smoke);
+  font-size: 1.3em;
+}
+
+nav > ul > li > a:hover {
+  color: var(--gold-yellow);
+}

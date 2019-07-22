@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --white-smoke: #f5f5f5;
+  --pure-black: #000;
+  --gold-yellow: #EDE700;
+  --material-purple: #6200EE;
+  --material-purple-opacity: #6200EEEC;
+  --success: #28a745;
+  --green: #23993f;
+  --form-bg: #ededed;
+  --border-primary-color: #bcbcbc;
+  --font-color-gray: #464646;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}

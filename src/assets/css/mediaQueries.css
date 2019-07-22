@@ -1,0 +1,29 @@
+@media (min-width: var(--breakpoint-xl)) {
+
+}
+
+@media (min-width: var(--breakpoint-lg)) and (max-width: var(--breakpoint-xl)) {
+
+}
+
+@media (min-width: var(--breakpoint-sm)) and (max-width: var(--breakpoint-lg)) {
+  nav > ul {
+    display: none;
+  }
+
+  article#sobre > div > img {
+    display: none;
+  }
+}
+
+@media (max-width: var(--breakpoint-xs)) and (max-width: var(--breakpoint-sm)) {
+  nav > ul {
+    display: none;
+  }
+}
+
+@media (max-width: var(--breakpoint-xs)) {
+  nav > ul {
+    display: none;
+  }
+}

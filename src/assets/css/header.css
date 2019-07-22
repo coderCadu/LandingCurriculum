@@ -1,0 +1,11 @@
+header > img {
+  width: 100%;
+  height: 695px;
+}
+
+header > div {
+  position: absolute;
+  top: 26vh;
+  left: 36vw;
+  font-size: 2.1em;
+}

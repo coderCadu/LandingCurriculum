@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--material-purple);
+  font-family: 'Roboto', sans-serif;
+  color: var(--white-smoke);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
