@@ -1,23 +1,21 @@
-const mensagemSucesso = document.querySelector('[mensagemSucesso]')
-const form = document.forms[0]
+const mensagemSucesso = document.querySelector('[mensagemSucesso]');
+const form = document.forms[0];
 
-form.onsubmit = async e => {
-  e.preventDefault()
+form.onsubmit = async (e) => {
+  e.preventDefault();
 
-  const form = e.target
-  const formData = new FormData(form)
+  const formDom = e.target;
+  const formData = new FormData(formDom);
   const options = {
     method: 'POST',
-    body: new URLSearchParams(formData)
-  }
+    body: new URLSearchParams(formData),
+  };
 
   try {
-    await fetch(form.action, options)
-    mensagemSucesso.innerText = 'Formulário enviado com sucesso!! Agora é só esperar o retorno'
+    await fetch(formDom.action, options);
+    mensagemSucesso.innerText = 'Formulário enviado com sucesso!! Agora é só esperar o retorno';
   } catch (err) {
-    console.log(err)
+    return false;
   }
-
-  return  false
-}
- 
+  return false;
+};
