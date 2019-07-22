@@ -11,20 +11,20 @@ function js() {
     .pipe(babel({ comments: false, presets: ['@babel/env'] }))
     .pipe(uglify())
     .pipe(concat('main.min.js'))
-    .pipe(dest('dist/assets/js'))
+    .pipe(dest('docs/assets/js'))
 }
 
 function html() {
   return src('src/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
 }
 
 function css() {
   return src('src/assets/css/**/*.css')
     .pipe(uglifycss({ 'uglyComments': true }))
     .pipe(concat('styles.min.css'))
-    .pipe(dest('dist/assets/css'))
+    .pipe(dest('docs/assets/css'))
 }
 
 function scss() {
@@ -35,7 +35,7 @@ function scss() {
 
 function img() {
   return src('src/assets/img/**/*.*')
-    .pipe(dest('dist/assets/img'))
+    .pipe(dest('docs/assets/img'))
 }
 
 function watchFiles(callback) {
