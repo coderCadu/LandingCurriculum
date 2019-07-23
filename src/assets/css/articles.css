@@ -1,10 +1,10 @@
 article#sobre {
-  padding: 100px 0;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  grid-area: about;
 }
 
 article#sobre p {
@@ -25,12 +25,10 @@ article#sobre div:nth-of-type(2) {
 }
 
 article#sobre div:nth-of-type(2) > img {
-  height: 100%;
+  width: calc(100% - 80px);
 }
 
 article#formacao {
-  padding: 100px 0;
-  width: 100%;
   background-color: var(--white-smoke);
   color: var(--pure-black);
   display: flex;
@@ -38,6 +36,7 @@ article#formacao {
   justify-content: space-around;
   text-align: center;
   align-items: center;
+  grid-area: school;
 }
 
 article#formacao img {
@@ -46,24 +45,26 @@ article#formacao img {
 }
 
 article#skills {
-  padding: 100px 0;
-  width: 100%;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  grid-area: skills;
+}
+
+article#skills > ul {
+  margin: 24px 0;
 }
 
 article#contato {
-  height: 580px;
-  width: 100%;
   background-color: var(--white-smoke);
   color: var(--pure-black);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
+  grid-area: contact;
 }
 
 article#contato > h2 {
@@ -73,7 +74,8 @@ article#contato > h2 {
 article#contato > form {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  /* width: calc(60vw - 200px); */
+  min-width: 42vw;
   border: 1px solid var(--pure-black);
   padding: 14px;
   border-radius: 8px;

@@ -2,13 +2,13 @@ nav {
   background-color: var(--material-purple-opacity);
   display: flex;
   flex-flow: row nowrap;
-  height: 70px;
   justify-content: space-between;
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
+  grid-area: navbar;
 }
 
 nav > div > p {

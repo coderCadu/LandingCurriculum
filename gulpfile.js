@@ -13,6 +13,7 @@ const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const uglifycss = require('gulp-uglifycss');
 const postcss = require('gulp-postcss');
+const imagemin = require('gulp-imagemin');
 const autoprefixer = require('autoprefixer');
 
 function js() {
@@ -48,11 +49,22 @@ function scss() {
 
 function img() {
   return src('src/assets/img/**/*.*')
+    .pipe(imagemin([
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false },
+        ],
+      }),
+    ]))
     .pipe(dest('docs/assets/img'));
 }
 
 function watchFiles(callback) {
   watch('src/assets/css/**/*.css', css);
+  watch('src/assets/scss/**/*.scss', scss);
   watch('src/assets/js/**/*.js', js);
   watch('src/assets/img/**/*.*', img);
   watch('src/', html);
@@ -61,6 +73,7 @@ function watchFiles(callback) {
 
 task('html', html);
 task('css', series(scss, css));
+task('scss', scss);
 task('js', js);
 task('img', img);
 task('watch', watchFiles);

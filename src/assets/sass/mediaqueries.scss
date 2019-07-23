@@ -1,0 +1,16 @@
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@media all and (max-width: $breakpoint-md) {
+  body {
+    grid-template-rows: repeat(5, 1fr) 100px;
+    grid-template-areas: 'header' 'about' 'school' 'skills' 'contact' 'footer';
+
+    nav {
+      display: none;
+    }
+  }
+}

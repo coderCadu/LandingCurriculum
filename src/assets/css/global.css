@@ -8,7 +8,11 @@ body {
   background-color: var(--material-purple);
   font-family: 'Roboto', sans-serif;
   color: var(--white-smoke);
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px repeat(5, 1fr) 100px;
+  grid-template-areas: 'navbar' 'header' 'about' 'school' 'skills' 'contact' 'footer';
+  min-height: 80vh;
+  min-width: 100vw;
 }
