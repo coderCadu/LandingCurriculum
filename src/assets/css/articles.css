@@ -52,11 +52,10 @@ article#skills {
   flex-flow: column wrap;
   color: #000;
   grid-area: skills;
-  padding-bottom: 8px;
 }
 
 article#skills > img {
-  width: 80vw;
+  width: 64vw;
 }
 
 article#contato {
