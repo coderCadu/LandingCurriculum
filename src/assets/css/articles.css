@@ -49,12 +49,10 @@ article#skills {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  color: #000;
   grid-area: skills;
-}
-
-article#skills > ul {
-  margin: 24px 0;
+  padding-bottom: 8px;
 }
 
 article#skills > img {
