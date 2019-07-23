@@ -57,6 +57,10 @@ article#skills > ul {
   margin: 24px 0;
 }
 
+article#skills > img {
+  width: 80vw;
+}
+
 article#contato {
   background-color: var(--white-smoke);
   color: var(--pure-black);
