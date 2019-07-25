@@ -20,6 +20,18 @@ form.onsubmit = async (e) => {
   return false;
 };
 
+// eslint-disable-next-line func-names
+$('nav a').click(function (e) {
+  e.preventDefault();
+  const id = $(this).attr('href');
+  const menuHeight = $('nav').innerHeight();
+  const targetOffset = $(id).offset().top - menuHeight;
+
+  $('html, body').animate({
+    scrollTop: targetOffset,
+  }, 1000);
+});
+
 // async function enviarDados(formData) {
 //   fetch('https://submit-form.com/agYqUrcY_08g8cTowKwVH', {
 //     method: 'POST',
