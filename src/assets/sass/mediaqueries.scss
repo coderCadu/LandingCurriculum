@@ -17,6 +17,12 @@ $breakpoint-xl: 1200px;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       margin: auto;
+      font-size: calc(4pt + (18 / 1200) * 100 * 1vw);
+      text-align: left;
+
+      p {
+        width: 100vw;
+      }
 
       div:nth-of-type(2) {
         display: none;

@@ -6,14 +6,14 @@ article#sobre {
   grid-gap: 20px;
   justify-items: center;
   align-items: center;
-  font-size: calc(14px + (8/10800) * 100 * 1vw);
+  overflow: hidden;
   text-align: center;
   background-color: var(--material-purple);
   color: var(--white-smoke);
 }
 
 article#sobre p {
-  text-align: justify;
+  text-align: left;
   line-height: 1.5;
 }
 

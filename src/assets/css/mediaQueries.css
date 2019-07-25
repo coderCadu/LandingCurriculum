@@ -7,7 +7,11 @@
     body article#sobre {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
-      margin: auto; }
+      margin: auto;
+      font-size: calc(4pt + (18 / 1200) * 100 * 1vw);
+      text-align: left; }
+      body article#sobre p {
+        width: 100vw; }
       body article#sobre div:nth-of-type(2) {
         display: none; }
     body article#formacao {
