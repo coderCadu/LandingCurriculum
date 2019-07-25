@@ -21,12 +21,12 @@ form.onsubmit = async (e) => {
 };
 
 // eslint-disable-next-line func-names
-$('nav a').click(function (e) {
+jQuery('nav a').click(function (e) {
   e.preventDefault();
-  const id = $(this).attr('href');
-  const menuHeight = $('nav').innerHeight();
-  const targetOffset = $(id).offset().top - menuHeight;
-  $('html, body').animate({
+  const id = jQuery(this).attr('href');
+  const menuHeight = jQuery('nav').innerHeight();
+  const targetOffset = jQuery(id).offset().top - menuHeight;
+  jQuery('html, body').animate({
     scrollTop: targetOffset,
   }, 1000);
 });
@@ -52,23 +52,23 @@ function debounce(func, wait, immediate) {
 
 // eslint-disable-next-line func-names
 (function () {
-  const $target = $('.anime');
+  const jQuerytarget = jQuery('.anime');
   const animationClass = 'anime-start';
-  const offset = $(window).height() * 3 / 4;
+  const offset = jQuery(window).height() * 3 / 4;
 
   function animeScroll() {
-    const documentTop = $(document).scrollTop();
+    const documentTop = jQuery(document).scrollTop();
     // eslint-disable-next-line func-names
-    $target.each(function () { 
-      const itemTop = $(this).offset().top;
+    jQuerytarget.each(function () { 
+      const itemTop = jQuery(this).offset().top;
       if (documentTop > itemTop - offset) {
-        $(this).addClass(animationClass);
+        jQuery(this).addClass(animationClass);
       }
     });
   }
 
   // eslint-disable-next-line func-names
-  $(document).scroll(debounce(() => {
+  jQuery(document).scroll(debounce(() => {
     animeScroll();
   }, 200));
 }());
