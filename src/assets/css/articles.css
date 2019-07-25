@@ -86,11 +86,8 @@ article#skills > img {
 }
 
 article#contato {
-  height: 90vh;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: stretch;
-  align-items: center;
+  min-height: 100vh;
+  text-align: center;
   padding-top: 100px;
   background-color: var(--white-smoke);
   color: var(--pure-black);
@@ -103,6 +100,7 @@ article#contato > h2 {
 article#contato > form {
   width: 66vw;
   min-width: 42vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 14px;
