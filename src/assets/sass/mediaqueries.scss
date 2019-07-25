@@ -1,37 +1,68 @@
-$breakpoint-xs: 0;
+$breakpoint-xs: 300px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+@media all and (max-width: $breakpoint-xs) {
+  article#contato {
+    form {
+      div {
+        flex-flow: column nowrap;
+
+        label {
+          border: none;
+          background-color: #f5f5f5;
+        }
+        input, textarea {
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: $breakpoint-sm) {
+  article#contato {
+    form {
+      width: 90vw;
+    }
+  }
+}
+
 @media all and (max-width: $breakpoint-md) {
   body {
-    grid-template-rows: repeat(5, 1fr) 100px;
-    grid-template-areas: 'header' 'about' 'school' 'skills' 'contact' 'footer';
-
     nav {
       display: none;
     }
 
     article#sobre {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      margin: auto;
       font-size: calc(4pt + (18 / 1200) * 100 * 1vw);
       text-align: left;
 
       p {
-        width: 100vw;
+        width: 80vw;
       }
 
-      div:nth-of-type(2) {
-        display: none;
+      div:nth-of-type(1) {
+        margin: 0 auto;
       }
     }
 
     article#formacao {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
+
+@media all and (max-width: $breakpoint-lg) {
+  article#sobre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    div:nth-of-type(2) {
+      display: none;
     }
   }
 }

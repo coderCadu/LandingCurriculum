@@ -1,19 +1,33 @@
+@media all and (max-width: 300px) {
+  article#contato form div {
+    flex-flow: column nowrap; }
+    article#contato form div label {
+      border: none;
+      background-color: #f5f5f5; }
+    article#contato form div input, article#contato form div textarea {
+      border-radius: 8px; } }
+
+@media all and (max-width: 576px) {
+  article#contato form {
+    width: 90vw; } }
+
 @media all and (max-width: 768px) {
-  body {
-    grid-template-rows: repeat(5, 1fr) 100px;
-    grid-template-areas: 'header' 'about' 'school' 'skills' 'contact' 'footer'; }
-    body nav {
-      display: none; }
-    body article#sobre {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      margin: auto;
-      font-size: calc(4pt + (18 / 1200) * 100 * 1vw);
-      text-align: left; }
-      body article#sobre p {
-        width: 100vw; }
-      body article#sobre div:nth-of-type(2) {
-        display: none; }
-    body article#formacao {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr); } }
+  body nav {
+    display: none; }
+  body article#sobre {
+    font-size: calc(4pt + (18 / 1200) * 100 * 1vw);
+    text-align: left; }
+    body article#sobre p {
+      width: 80vw; }
+    body article#sobre div:nth-of-type(1) {
+      margin: 0 auto; }
+  body article#formacao {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); } }
+
+@media all and (max-width: 992px) {
+  article#sobre {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+    article#sobre div:nth-of-type(2) {
+      display: none; } }
