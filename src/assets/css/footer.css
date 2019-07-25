@@ -1,10 +1,11 @@
 footer {
   display: flex;
-  text-align: center;
+  flex-direction: column;
   align-content: center;
   align-items: center;
-  flex-direction: column;
-  grid-area: footer;
+  text-align: center;
+  background-color: var(--material-purple);
+  color: var(--white-smoke);
 }
 
 footer > div {
@@ -12,9 +13,9 @@ footer > div {
 }
 
 footer > div > a {
-  color: var(--white-smoke);
   text-decoration: none;
   padding: 0 10px;
+  color: var(--white-smoke);
 }
 
 footer > div > a:hover {

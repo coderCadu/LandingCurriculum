@@ -63,7 +63,7 @@ function img() {
 }
 
 function watchFiles(callback) {
-  watch('src/assets/css/**/*.css', css);
+  watch('src/assets/css/**/*.css', series(scss, css));
   watch('src/assets/scss/**/*.scss', scss);
   watch('src/assets/js/**/*.js', js);
   watch('src/assets/img/**/*.*', img);

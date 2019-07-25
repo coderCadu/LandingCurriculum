@@ -12,5 +12,20 @@ $breakpoint-xl: 1200px;
     nav {
       display: none;
     }
+
+    article#sobre {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin: auto;
+
+      div:nth-of-type(2) {
+        display: none;
+      }
+    }
+
+    article#formacao {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
   }
 }

@@ -3,4 +3,13 @@
     grid-template-rows: repeat(5, 1fr) 100px;
     grid-template-areas: 'header' 'about' 'school' 'skills' 'contact' 'footer'; }
     body nav {
-      display: none; } }
+      display: none; }
+    body article#sobre {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin: auto; }
+      body article#sobre div:nth-of-type(2) {
+        display: none; }
+    body article#formacao {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr); } }

@@ -3,9 +3,10 @@
 :root {
   --white-smoke: #f5f5f5;
   --pure-black: #000;
-  --gold-yellow: #EDE700;
-  --material-purple: #6200EE;
-  --material-purple-opacity: #6200EEEC;
+  --gold-yellow: #CFC446;
+  --bold-text-color: #ffa500;
+  --material-purple: #6e47ce;
+  --material-purple-opacity: #6e47ceec;
   --success: #28a745;
   --green: #23993f;
   --form-bg: #ededed;

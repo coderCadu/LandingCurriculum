@@ -1,14 +1,15 @@
 nav {
-  background-color: var(--material-purple-opacity);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 10;
-  grid-area: navbar;
+  height: 70px;
+  background-color: var(--material-purple-opacity);
+  color: var(--white-smoke);
 }
 
 nav > div > p {
@@ -32,9 +33,9 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
+  font-size: 1.3em;
   text-decoration: none;
   color: var(--white-smoke);
-  font-size: 1.3em;
 }
 
 nav > ul > li > a:hover {
