@@ -81,6 +81,7 @@ article#skills {
 article#skills > img {
   min-width: 64vw;
   max-width: 80vw;
+  filter: invert(1);
   outline: none;
   border: none;
 }
