@@ -46,14 +46,21 @@ article#sobre div:nth-of-type(2) > img {
 
 article#formacao {
   min-height: 100vh;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 30px;
+  background-color: var(--white-smoke);
+  color: var(--pure-black);
+}
+
+div.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
   text-align: center;
-  background-color: var(--white-smoke);
-  color: var(--pure-black);
+  font-size: 1em;
 }
 
 article#formacao div:focus {
@@ -61,19 +68,16 @@ article#formacao div:focus {
   border: none;
 }
 
-article#formacao img {
+div.grid img {
   height: 240px;
   width: 300px;
 }
 
 article#skills {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr;
-  justify-items: center;
-  align-items: center;
+  text-align: center;
   font-size: 1.5rem;
+  padding-top: 30px;
   color: var(--white-smoke);
   background-color: var(--material-purple);
 }
@@ -84,6 +88,7 @@ article#skills > img {
   filter: invert(1);
   outline: none;
   border: none;
+  margin: 0 auto;
 }
 
 article#contato {
